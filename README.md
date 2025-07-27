@@ -1,5 +1,5 @@
 # Savorit (iOS Native)
-> 저장하기만 누르던 컨텐츠들을 한곳에 모아두는 아카이빙앱
+> 세이보릿은 save와 favorite의 합성어로, 저장하기만 누르던 컨텐츠들을 한곳에 모아두는 아카이빙앱입니다
 
 <img src="https://github.com/user-attachments/assets/560bc101-d8b5-44ce-b349-d95970bd5eda" alt="logo" width="300" height="300" />
 
