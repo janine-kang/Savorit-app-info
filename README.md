@@ -72,7 +72,6 @@
 
 #### ⭐ **즐겨찾기**
 - **간단한 플래그 시스템**: `isFavorite` boolean 필드로 즐겨찾기 상태 관리
-- **필터링 로직**: Repository 레벨에서 즐겨찾기 필터링 구현
 - **UI 반응성**:
   - SwiftUI의 `@Published` 프로퍼티로 즐겨찾기 토글 시 즉각적인 UI 업데이트
   - Combine으로 즐겨찾기 변경 이벤트를 다른 뷰에 전파
@@ -83,6 +82,7 @@
 - **일괄 작업**: 여러 아이템을 한 번에 삭제
 - **백그라운드 처리**: 효율적인 이미지 처리 및 캐싱
 - **다크 모드 지원**: 커스텀 색상 구성표를 포함한 완전한 테마 지원
+- **Optimistic UI Update**: 즉각적인 UI 업데이트 및 롤백 구현
 
 ## 기술 스택
 
@@ -158,7 +158,7 @@ MVVM with Clean Architecture
   - Repository → Service → ViewModel → View로 이어지는 데이터 플로우
   - `Combine`의 `AnyPublisher` 체인을 통한 비동기 작업 처리
   - DIContainer를 통해 각 레이어가 하위 레이어만 의존하도록 설계
-3. 이벤트 기반 프레젠테이션 레이어 (Event-driven Presentation)
+2. 이벤트 기반 프레젠테이션 레이어 (Event-driven Presentation)
   - 각 ViewModel에 Action enum 정의
   - send(action:) 메서드로 사용자 액션을 처리하는 명령 패턴 사용
 
